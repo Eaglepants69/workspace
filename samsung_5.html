@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Samsung tablet</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="background-color-producten">
+        <header>
+            <table width:"100%" border="0" align="center" cellpadding="10" cellspacing="10">
+                <tr>
+                    <a href="index.html"><img src="img/output-onlinepngtools.png" alt="Tablet4U logo" id="logo" style="width: 300px; height: auto;"></a>
+                    <td align="center">
+                        <h1>Tablet4U</h1>
+                    </td>
+                </tr>
+            </table>
+        </header> 
+        <nav class="navigatie">
+                <ul class="nav nav-list">
+                    <li id="button"><a href="index.html">Home</a></li>
+                    <li id="button-producten"><a href="producten.html">Producten</a></li>
+                    <li id="button-over-ons"><a href="over ons.html">Over ons</a></li>
+                    <li id="button-contact"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        <main>
+            <table width="54%" border="1" cellspacing="10" cellpadding="10" class="table" align="center">
+                <tr>
+                    <td>
+            <content align="center">
+                <h2>Samsung Tablet</h2>
+                <p>Samsung galaxy tab s4 zwart</p>
+            </content>
+            <content>
+                <div align="center">
+                    <img src="img/samsung zwart 10.png" alt="Een tablet van het merk Samsung" class="image" align="center">
+                </div>
+                
+                <div align="center">
+                    <table>
+                        <tr>
+                            <th>Schermdiagonaal</th>
+                            <td>10.5 inch</td>
+                        </tr>
+                        <tr>
+                            <th>Besturingssysteem</th>
+                            <td>Android 8.1 </td>
+                        </tr>
+                        <tr>
+                            <th>Draadloze verbinding</th>
+                            <td>Bluethooth Wifi</td>
+                        </tr>
+                        <tr>
+                            <th>Opslagcapaciteit</th>
+                            <td>64 GB</td>
+                        </tr>
+                        <tr>
+                            <th>RAM-geheugen</th>
+                            <td> 4 GB</td>
+                        </tr>
+                        <tr>
+                            <th>Prijs</th>
+                            <td>€648-</td>
+                        </tr>
+                    </table>
+                    <div align="justify"><br>
+                       De Tab S4 is uitgerust met 4GB werkgeheugen en 2,35 GHz octa-coreprocessor, wat de tablet ruim 20% sneller maakt dan zijn voorganger. Uiteraard is de Tab S4, net als zijn voorganger, uitgerust met de S-Pen. Bovendien is de S-Pen vernieuwd, zo voelt hij meer aan als een echte pen en biedt hij nog meer mogelijkheden. Zo gebruik je de pen voor Screen Off Memo’s, pak de pen en begin direct op het zwarte scherm te schrijven, ideaal voor als je snel notities wilt maken. Of gebruik de pen om direct woorden, hele zinnen of zelfs (munt)eenheden te vertalen. Daarnaast kan je de pen uiteraard ook gebruiken voor het bewerken van foto’s en nog veel meer. Om dit alles van stroom te voorzien is ook de batterij vernieuwd, wat met 7300 mAh de mogelijkheid biedt om 15 uur achtereen films te kijken.
+
+                       <button class="button"><a href="https://www.mediamarkt.nl/nl/product/_samsung-galaxy-tab-s4-10-5-64gb-wifi-zwart-1585616.html" target="blank">Koop hier</a></button>
+                    </div>
+                </div>
+            </content>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer class="copyright">
+            ©Mink Veldkamp 2018
+        </footer>
+        
+        <script type="text/javascript" >
+            function orderProduct(){
+                var productAantal = sessionStorage.getItem('productAantal');
+                if(productAantal== null){
+                    productAantal = 0;
+                }
+                
+                productAantal = parseInt(productAantal) + 1;
+                sessionStorage.setItem('productAantal',  productAantal);
+                console.log(productAantal);
+                document.getElementById('winkelmand').innerHTML = productAantal;
+               
+                
+            }
+            
+            function clearBasket(){
+                sessionStorage.removeItem('productAantal');
+                document.getElementById('winkelmand').innerHTML = 0;
+            }
+        </script>
+    </body>
+</html>

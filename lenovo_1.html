@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lenovo tab 4 10 pagina van Tablet4U">
+        <meta name="author" content="Mink Veldkamp">
+
+        <title>Lenovo Tablet</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="background-color-producten">
+        <header>
+             <table width:"100%" border="0" align="center" cellpadding="10" cellspacing="10">
+                <tr>
+                    <a href="index.html"><img src="img/output-onlinepngtools.png" alt="Tablet4U logo" id="logo" style="width: 300px; height: auto;"></a>
+                    <td align="center">
+                        <h1 class="h1">Tablet4U</h1>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <nav class="navigatie">
+                <ul class="nav nav-list">
+                    <li id="button"><a href="index.html">Home</a></li>
+                    <li id="button-producten"><a href="producten.html">Producten</a></li>
+                    <li id="button-over-ons"><a href="over ons.html">Over ons</a></li>
+                    <li id="button-contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <main>
+            <table width="54%" border="1" cellspacing="10" cellpadding="10" class="table" align="center">
+                <tr>
+                    <td>
+            <content align="center">
+                <h2>Lenovo tablet wit</h2>
+                <p>Lenovo tab 4 10</p>
+            </content>
+            <content>
+                <div align="center">
+                    <img src="img/lenovo zilver 10.png" alt="Een tablet van het merk Lenovo" class="image" align="center">
+                </div>
+                
+                <div align="center">
+                    <table>
+                        <tr>
+                            <th>Schermdiagonaal</th>
+                            <td>10.1 inch</td>
+                        </tr>
+                        <tr>
+                            <th>Besturingssysteem</th>
+                            <td>Android 7.0</td>
+                        </tr>
+                        <tr>
+                            <th>Draadloze verbinding</th>
+                            <td>Bluethooth Wifi</td>
+                        </tr>
+                        <tr>
+                            <th>Opslagcapaciteit</th>
+                            <td>32 GB</td>
+                        </tr>
+                        <tr>
+                            <th>RAM-geheugen</th>
+                            <td> 2 GB</td>
+                        </tr>
+                        <tr>
+                            <th>Prijs</th>
+                            <td>€169-</td>
+                        </tr>
+                    </table>
+                    <div align="justify"><br>
+                        De Lenovo Tab 4 10 biedt veel entertainment-plezier dankzij het HD-scherm en Dolby Atmos-luidsprekers. Het 10,1 inch-touchscreen maakt gebruik van IPS-technologie waardoor je heldere kleuren hebt vanuit elke kijkhoek. De geïntegreerde stereoluidsprekers van de Lenovo Tab 4 10 ondersteunen Dolby Atmos en het geluid helder en vol klinkt. Voor het opslaan van apps, films en muziek is 16 GB geheugen aanwezig, wat eventueel uit te breiden is met een microSD-kaartje. Daarnaast gaat de batterij tot 10 uur lang mee en heb je genoeg capaciteit een hele (werk)dag door te komen. Tot slot is de Lenovo Tab 4 10 slechts 84 millimeter dun en kan je de tablet gemakkelijk met familieleden delen dankzij de handige gebruikersprofielen. Iedereen werkt dus in een eigen account.
+
+                        <button class="button"><a href="https://www.mediamarkt.nl/nl/product/_lenovo-tab-4-10-32gb-wit-1519271.html" target="blank">Koop hier</a></button>
+                    </div>
+                </div>
+            </content>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer class="copyright">
+            <a href="file:///D:/ROC/Leerjaar%201/Project/website/workspace/copyright.html">©Mink Veldkamp 2018</a>
+        </footer>
+        
+        <script type="text/javascript" >
+            function orderProduct(){
+                var productAantal = sessionStorage.getItem('productAantal');
+                if(productAantal== null){
+                    productAantal = 0;
+                }
+                
+                productAantal = parseInt(productAantal) + 1;
+                sessionStorage.setItem('productAantal',  productAantal);
+                console.log(productAantal);
+                document.getElementById('winkelmand').innerHTML = productAantal;
+               
+                
+            }
+            
+            function clearBasket(){
+                sessionStorage.removeItem('productAantal');
+                document.getElementById('winkelmand').innerHTML = 0;
+            }
+        </script>
+    </body>
+</html>

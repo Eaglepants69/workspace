@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Hier staan alle producten van Tablet 4 U">
+        <meta name="author" content="Mink Veldkamp">
+
+        <!-- Latest compiled and minified CSS -->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" -->
+        <!--integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Tablet 4 U producten</title>
+    </head>
+    <body class="background-color-producten">
+        <header>
+            <nav class="navigatie">
+                <ul class="nav nav-list">
+                    <li id="logo"><a href="home.html"><img src="" alt="" id="logo"></a></li>
+                    <li id="home"><a href="index.html"><button>Home</button></a></li>
+                    <li ><a href="producten.html"><button>Producten</button></a></li>
+                    <li ><a href="over ons.html"><button>Over ons</button></a></li>
+                    <li ><a href="#"><button>Contact</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <content class="sidebar">
+                    <ul class="filter-lists">
+                        <li class="filter-type-lists">
+                            <ul class="list-merken">
+                                <label id="filter-type" >Merken</label>
+                                <li>
+                                    <input type="checkbox" id="filter-apple" name="apple" class="merken" onclick="toonSelectie()">
+                                    <label for="filter-apple">Apple</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="filter-microsoft" name="microsoft" class="merken" onclick="toonSelectie()">
+                                    <label for="filter-microsoft">Microsoft</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="filter-samsung" name="samsung" class="merken" onclick="toonSelectie()">
+                                    <label for="filter-samsung">Samsung</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="filter-lenovo" name="lenovo" class="merken" onclick="toonSelectie()">
+                                    <label for="filter-lenovo">Lenovo</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="filter-type-lists">
+                             <ul class="list-merken">
+                                <label id="filter-type" >Kleur</label>
+                                <li>
+                                    <input type="checkbox" id="spacegrey" name="spacegrey" class="merken" onclick="toonSelectie()">
+                                    <label for="spacegrey">Spacegrey</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="zwart" name="zwart" class="merken" onclick="toonSelectie()">
+                                    <label for="zwart">Zwart</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="zilver" name="zilver" class="merken" onclick="toonSelectie()">
+                                    <label for="zilver">Zilver</label>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" id="goud" name="goud" class="merken" onclick="toonSelectie()">
+                                    <label for="goud">Goud</label>
+                                </li>
+                                 <li>
+                                    <input type="checkbox" id="wit" name="wit" class="merken" onclick="toonSelectie()">
+                                    <label for="wit">Wit</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <!--<button onclick="toonSelectie()">Toon selectie</button>  IS NIET MEER NODIG IVM FUNCTIE AANROEP BIJ CHECKBOXES -->
+            </content>
+            <main class="main-content">
+                <table width:400px>
+                    <tr>
+
+                <div class="product-row">
+                    <div class="column">
+                        <a id="imgLink1" href=#><img id="img1" style="width:200px; height:300px;" class="product-image"></a><br>Ipad air 2 Zilver
+                        
+                    </div>
+                    <div class="column">
+                        <a id="imgLink2" href=#><img id="img2" style="width:200px height:300px;" class="product-image"></a><br>Ipad Air 2 Spacegrey
+                        
+                    </div>
+                    <div class="column">
+                        <a id="imgLink3" href=#><img id="img3" style="width:200px; height:300px;"class="product-image"></a><br>Ipad Air 2 Gold
+                       
+                    </div>
+                    <div class="column">
+                        <a id="imgLink4" href=#><img id="img4" style="width:200px; height:300px;" class="product-image"></a><br>Lenovo tablet wit
+                        
+                    </div><br>
+                    <div class="column">
+                        <a id="imgLink5" href=#><img id="img5" style="width:200px; height:300px;" class="product-image"></a><br>Lenovo tablet zwart
+                        
+                    </div>
+                    <div class="column">
+                        <a id="imgLink6" href=#><img id="img6" style="width:200px; height:300px;" class="product-image"></a><br>Lenovo tablet zwart
+                        
+                    </div>
+                   <div class="column">
+                        <a id="imgLink7" href=#><img id="img7" style="width:200px; height:300px;" class="product-image"></a><br>Microsoft surface pro
+                        
+                    </div>
+                   <div class="column">
+                        <a id="imgLink8" href=#><img id="img8" style="width:200px; height:300px;" class="product-image"></a>
+                    </div><br>
+                   <div class="column">
+                        <a id="imgLink9" href=#><img id="img9" style="width:200px; height:300px;" class="product-image"></a>
+                    </div>
+                   <div class="column">
+                        <a id="imgLink10" href=#><img id="img10" style="width:200px; height:300px;" class="product-image"></a>
+                    </div>
+                   <div class="column">
+                        <a id="imgLink11" href=#><img id="img11" style="width:200px; height:300px;" class="product-image"></a>
+                    </div>
+                   <div class="column">
+                        <a id="imgLink6" href=#><img id="img6" style="width:200px; height:300px;" class="product-image"></a>
+                    </div>
+
+                </div>
+                <div class="product-row">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+                </tr>
+
+            </table>
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+        <script src="selectie.js"></script>
+    </body>
+</html>

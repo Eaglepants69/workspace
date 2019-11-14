@@ -1,0 +1,210 @@
+body{
+    font-family: Verdana;
+    background-color: white;
+}
+#tweetalen li {
+    list-style: none;
+}
+#tweetalen a {
+    text-decoration: none;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    width:25%;
+}
+
+.main-content {
+    width: 80%; 
+    height: 650px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+}
+
+#welcomeIMG{
+    box-shadow:  1px 2px 11px 0px;
+}
+
+header{
+    display:flex;
+    justify-content:center;
+}
+
+.navigatie{
+    
+    width:1750px;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction:row;
+    justify-content:left;
+    align-items:left;
+}
+
+.nav-list li{
+    padding:30px;
+    list-style: none;
+}
+
+.nav-list #logo{
+    padding:0px;
+}
+
+nav-list li a{
+    text-decoration: none;
+    color: #067ab4;
+    font-weight:700;
+    font-size:20px;
+    font-family: Verdana;
+}
+
+.broodkruimel{
+    padding: 8px;
+}
+
+.list-merken li{
+    padding:2px;
+}
+
+#logo{
+    width: 150px;
+    height:75px;
+}
+
+/* FILTER  */
+.filter-lists, .filter-lists ul {
+    list-style: none;
+}
+#filter-type{
+    font-weight: bold;
+}
+.product-row{
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;    
+    flex-wrap: wrap;
+}
+
+.product-detail{
+    display:fle;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align:left;
+}
+.product-detail img{
+      max-width:300px;
+    max-height: 200px;
+}
+.product-image{
+    max-width:300px;
+    max-height: 200px;
+    overflow: hidden;
+    padding:20px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.product-image:hover{
+    box-shadow: 0px 0px 2px 0px #ff0;
+}
+
+.product-description-detail{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.product-description{
+    width:350px;
+}
+.product-image {
+    display:none;
+}
+.background-color-home {
+    background-color: white;
+}
+.background-color-producten {
+    background-color: #ccffcc;
+}
+.background-color-about-us {
+    background-color: #ffcc80;
+}
+.background-color-contact {
+    background-color: #f44242;
+}
+.text-type {
+    font-family: verdana;
+}
+.background-color-table {
+    background-color: white;
+    width:auto; height:auto;
+}
+.column {
+    background-color: white;
+}
+.table {
+    background-color: white;
+}
+#button {
+   background-color:white;
+   color:#ffffff;
+   border:1px solid;
+   font-family: Verdana;
+}
+#button-producten {
+    background-color: #2bd86d;
+    color:#ffffff;
+    border:1px solid;
+    font-family: Verdana;
+
+
+}
+#button-over-ons {
+    background-color: #fcbe14;
+    color:#ffffff;
+    border:1px solid;
+    font-family: Verdana;
+}
+
+#button-contact {
+    background-color: #db4643;
+    color:#ffffff;
+    border:1px solid;
+    font-family: Verdana;
+}
+.image {
+    height: auto;
+    width: 60%;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 0;
+    left: 1;
+}
+#home {
+    height: 20px;
+
+}
+.button{
+    background-color: #ccffcc;
+    padding: 2px;
+    border-radius: 8px;
+    border:2px solid #ccffcc;
+}
+.button:hover {
+    background-color: #11e060;
+
+}
+.h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-right: 275px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Samsung galaxy tab s3 zilver pagina van Tablet4U">
+        <meta name="author" content="Mink Veldkamp">
+
+        <title>Samsung Tablet</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="background-color-producten">
+        <header>
+            <table width:"100%" border="0" align="center" cellpadding="10" cellspacing="10">
+                <tr>
+                    <a href="index.html"><img src="img/output-onlinepngtools.png" alt="Tablet4U logo" id="logo" style="width: 300px; height: auto;"></a>
+                    <td align="center">
+                        <h1 class="h1">Tablet4U</h1>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <nav class="navigatie">
+                <ul class="nav nav-list">
+                    <li id="button"><a href="index.html">Home</a></li>
+                    <li id="button-producten"><a href="producten.html">Producten</a></li>
+                    <li id="button-over-ons"><a href="over ons.html">Over ons</a></li>
+                    <li id="button-contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <main>
+            <table width="54%" border="1" cellspacing="10" cellpadding="10" class="table" align="center">
+                <tr>
+                    <td>
+            <content align="center">
+                <h2>Samsung Tablet</h2>
+                <p>Samsung galaxy tab s3 zilver</p>
+            </content>
+            <content>
+                <div align="center">
+                    <img src="img/samsung zilver 10.jpg" alt="Een tablet van het merk Samsing" class="image" align="center">
+                </div>
+                
+                <div align="center">
+                    <table>
+                        <tr>
+                            <th>Schermdiagonaal</th>
+                            <td>9,7 inch</td>
+                        </tr>
+                        <tr>
+                            <th>Besturingssysteem</th>
+                            <td>Android N</td>
+                        </tr>
+                        <tr>
+                            <th>Draadloze verbinding</th>
+                            <td>Bluethooth Wifi</td>
+                        </tr>
+                        <tr>
+                            <th>Opslagcapaciteit</th>
+                            <td>32 GB</td>
+                        </tr>
+                        <tr>
+                            <th>RAM-geheugen</th>
+                            <td> 4 GB</td>
+                        </tr>
+                        <tr>
+                            <th>Prijs</th>
+                            <td>€419-</td>
+                        </tr>
+                    </table>
+                    <div align="justify"><br>
+                       De Samsung Galaxy Tab S3 9.7 is een krachtige tablet geschikt voor alle soorten entertainment. Wat meteen in het oog springt is het 9,7-inch Super AMOLED-scherm. Dankzij de hoge resolutie en ondersteuning voor HDR zien foto's en video's er levensecht uit. Voor het geluid zorgen de 4 luidsprekers van AKG, die zich automatisch aanpassen aan de stand van de tablet. De Samsung Galaxy Tab S3 9.7 wordt geleverd met de nieuwe S-Pen. Hiermee kan je aantekeningen maken, video's editen of je creativiteit los laten met tekenen. Met Screen off Memo kan je snel een idee noteren wanneer het scherm uit staat. De behuizing is gemaakt van krasbestendig aluminium voor een luxe en unieke look. Dankzij Adaptive Fast Charging is de Samsung Galaxy Tab S3 9.7 in ongeveer 3 uur volledig opgeladen, waarna je tot wel 12 uur lang bijvoorbeeld video's kan kijken.
+
+                       <button class="button"><a href="https://www.mediamarkt.nl/nl/product/_samsung-galaxy-tab-s3-9-7-wifi-zilver-1501828.html" target="blank">Koop hier</a></button>
+                    </div>
+                </div>
+            </content>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer class="copyright">
+            <a href="file:///D:/ROC/Leerjaar%201/Project/website/workspace/copyright.html">©Mink Veldkamp 2018</a>
+        </footer>
+        
+        <script type="text/javascript" >
+            function orderProduct(){
+                var productAantal = sessionStorage.getItem('productAantal');
+                if(productAantal== null){
+                    productAantal = 0;
+                }
+                
+                productAantal = parseInt(productAantal) + 1;
+                sessionStorage.setItem('productAantal',  productAantal);
+                console.log(productAantal);
+                document.getElementById('winkelmand').innerHTML = productAantal;
+               
+                
+            }
+            
+            function clearBasket(){
+                sessionStorage.removeItem('productAantal');
+                document.getElementById('winkelmand').innerHTML = 0;
+            }
+        </script>
+    </body>
+</html>

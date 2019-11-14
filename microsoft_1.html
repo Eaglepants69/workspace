@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Microsoft surface Pro 2017 pagina van Tablet4U">
+        <meta name="author" content="Mink Veldkamp">
+
+        <title>Microsoft Tablet</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="background-color-producten">
+        <header>
+            <table width:"100%" border="0" align="center" cellpadding="10" cellspacing="10">
+                <tr>
+                    <a href="index.html"><img src="img/output-onlinepngtools.png" alt="Tablet4U logo" id="logo" style="width: 300px; height: auto;"></a>
+                    <td align="center">
+                        <h1 class="h1">Tablet4U</h1>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <nav class="navigatie">
+                <ul class="nav nav-list">
+                    <li id="button"><a href="index.html">Home</a></li>
+                    <li id="button-producten"><a href="producten.html">Producten</a></li>
+                    <li id="button-over-ons"><a href="over ons.html">Over ons</a></li>
+                    <li id="button-contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <main>
+            <table width="54%" border="1" cellspacing="10" cellpadding="10" class="table" align="center">
+                <tr>
+                    <td>
+            <content align="center">
+                <h2>Microsoft surface Pro (2017)</h2>
+                <p>Microsoft tablet</p>
+            </content>
+            <content>
+                <div align="center">
+                    <img src="img/microsoft.png" alt="Een tablet van het merk Microsoft" class="image" align="center">
+                </div>
+                
+                <div align="center">
+                    <table>
+                        <tr>
+                            <th>Schermdiagonaal</th>
+                            <td>12.3 inch</td>
+                        </tr>
+                        <tr>
+                            <th>Besturingssysteem</th>
+                            <td>Windows 10 Pro</td>
+                        </tr>
+                        <tr>
+                            <th>Draadloze verbinding</th>
+                            <td>Bluethooth Wifi</td>
+                        </tr>
+                        <tr>
+                            <th>Opslagcapaciteit</th>
+                            <td>256 GB</td>
+                        </tr>
+                        <tr>
+                            <th>RAM-geheugen</th>
+                            <td> 8 GB</td>
+                        </tr>
+                        <tr>
+                            <th>Prijs</th>
+                            <td>€1399-</td>
+                        </tr>
+                    </table>
+                    <div align="justify"><br>
+                       De nieuwe Microsoft Surface Pro is sneller, lichter en houdt het langer vol dan zijn voorgangers. De extra snelheid komt door het gebruik van een Intel Core-processor van de zevende generatie. Deze zorgt ervoor dat de meer dan 5 miljoen pixels van het 12,3-inch PixelSense-scherm razendsnel reageren op elke aanraking. Gebruik je liever niet je vinger, dan kan je de optionele Surface Pen gebruiken. Deze is nog gevoeliger gemaakt en kan nu onderscheid maken tussen 4096 verschillende drukniveau's en detecteert of je de pen schuin houdt voor extra effecten.
+
+                       <button class="button"><a href="https://www.mediamarkt.nl/nl/product/_microsoft-surface-pro-i5-8-256gb-1513382.html" target="blank">Koop hier</a></button>
+                    </div>
+                </div>
+            </content>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer class="copyright">
+            <a href="file:///D:/ROC/Leerjaar%201/Project/website/workspace/copyright.html">©Mink Veldkamp 2018</a>
+        </footer>
+        
+        <script type="text/javascript" >
+            function orderProduct(){
+                var productAantal = sessionStorage.getItem('productAantal');
+                if(productAantal== null){
+                    productAantal = 0;
+                }
+                
+                productAantal = parseInt(productAantal) + 1;
+                sessionStorage.setItem('productAantal',  productAantal);
+                console.log(productAantal);
+                document.getElementById('winkelmand').innerHTML = productAantal;
+               
+                
+            }
+            
+            function clearBasket(){
+                sessionStorage.removeItem('productAantal');
+                document.getElementById('winkelmand').innerHTML = 0;
+            }
+        </script>
+    </body>
+</html>

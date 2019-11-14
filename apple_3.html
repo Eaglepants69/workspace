@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Ipad 2018 gold pagina van Tablet4U">
+        <meta name="author" content="Mink Veldkamp">
+
+        <title>Apple Tablet</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="background-color-producten">
+        <header>
+            <table width:"100%" border="0" align="center" cellpadding="10" cellspacing="10">
+                <tr>
+                    <a href="index.html"><img src="img/output-onlinepngtools.png" alt="Tablet4U logo" id="logo" style="width: 300px; height: auto;"></a>
+                    <td align="center">
+                        <h1 class="h1">Tablet4U</h1>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <nav class="navigatie">
+                <ul class="nav nav-list">
+                    <li id="button"><a href="index.html">Home</a></li>
+                    <li id="button-producten"><a href="producten.html">Producten</a></li>
+                    <li id="button-over-ons"><a href="over ons.html">Over ons</a></li>
+                    <li id="button-contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <main>
+                <table width="54%" border="1" cellspacing="10" cellpadding="10" class="table" align="center">
+                    <tr>
+                        <td>
+                    <content align="center">
+                <h2>Apple tablet</h2>
+                <p>Ipad 2018 Gold</p>
+            </content>
+            <content>
+                <div align="center">
+                    <img src="img/apple wit 10.png" alt="Een tablet van het merk Apple" class="image" align="center">
+                </div>
+                <div align="center">
+                    <table>
+                        <tr>
+                            <th>Schermdiagonaal</th>
+                            <td>9,7 inch</td>
+                        </tr>
+                        <tr>
+                            <th>Besturingssysteem</th>
+                            <td>IOS 12</td>
+                        </tr>
+                        <tr>
+                            <th>Draadloze verbinding</th>
+                            <td>Bluethooth Wifi</td>
+                        </tr>
+                        <tr>
+                            <th>Opslagcapaciteit</th>
+                            <td>32 GB</td>
+                        </tr>
+                        <tr>
+                            <th>RAM-geheugen</th>
+                            <td> 2 GB</td>
+                        </tr>
+                        <tr>
+                            <th>Prijs</th>
+                            <td>€349-</td>
+                        </tr>
+                    </table>
+                    <div align="justify"><br>
+                       Deze Apple iPad heeft een snellere processor dan zijn voorganger, 
+                       waardoor je sneller door apps en menu's heen navigeert. 
+                       Het 4:3 Retina beeldscherm leent zich goed voor lezen en browsen. 
+                       Zo wissel je tijdens je ontbijt snel tussen het nieuws en je social media kanalen. 
+                       Start een videogesprek en praat even bij met vrienden en familie. 
+                       Dankzij de FaceTime HD camera aan de voorkant ben je goed zichtbaar voor de persoon aan de andere kant. 
+                       's Avonds plof je met je Apple iPad op de bank en stream je een serie of 
+                       luister je nog wat muziek voor het slapen gaan.
+
+                       <button class="button"><a href="https://www.mediamarkt.nl/nl/product/_apple-ipad-2018-32gb-wifi-goud-1567814.html" target="blank"></a></button>
+                    </div>
+                </div>
+            </content>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer class="copyright">
+            <a href="file:///D:/ROC/Leerjaar%201/Project/website/workspace/copyright.html">©Mink Veldkamp 2018</a>
+        </footer>
+        
+        <script type="text/javascript" >
+            function orderProduct(){
+                var productAantal = sessionStorage.getItem('productAantal');
+                if(productAantal== null){
+                    productAantal = 0;
+                }
+                
+                productAantal = parseInt(productAantal) + 1;
+                sessionStorage.setItem('productAantal',  productAantal);
+                console.log(productAantal);
+                document.getElementById('winkelmand').innerHTML = productAantal;
+               
+                
+            }
+            
+            function clearBasket(){
+                sessionStorage.removeItem('productAantal');
+                document.getElementById('winkelmand').innerHTML = 0;
+            }
+        </script>
+    </body>
+</html>

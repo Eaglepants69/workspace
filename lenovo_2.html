@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lenovo tab 3 7 essential pagina van Tablet4U">
+        <meta name="author" content="Mink Veldkamp">
+
+        <title>Lenovo Tablet</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="background-color-producten">
+        <header>
+            <table width:"100%" border="0" align="center" cellpadding="10" cellspacing="10">
+                <tr>
+                    <a href="index.html"><img src="img/output-onlinepngtools.png" alt="Tablet4U logo" id="logo" style="width: 300px; height: auto;"></a>
+                    <td align="center">
+                        <h1 class="h1">Tablet4U</h1>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <nav class="navigatie">
+                <ul class="nav nav-list">
+                    <li id="button"><a href="index.html">Home</a></li>
+                    <li id="button-producten"><a href="producten.html">Producten</a></li>
+                    <li id="button-over-ons"><a href="over ons.html">Over ons</a></li>
+                    <li id="button-contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <main>
+            <table width="54%" border="1" cellspacing="10" cellpadding="10" class="table" align="center">
+                <tr>
+                    <td>
+            <content align="center">
+                <h2>Lenovo tablet Zwart</h2>
+                <p>Lenovo tab 3 7 essential</p>
+            </content>
+            <content>
+                <div align="center">
+                    <img src="img/lenovo-tablet-tab3-7-essential-main.png" alt="Een tablet van het merk Lenovo" class="image" align="center">
+                </div>
+                
+                <div align="center">
+                    <table>
+                        <tr>
+                            <th>Schermdiagonaal</th>
+                            <td>7 inch</td>
+                        </tr>
+                        <tr>
+                            <th>Besturingssysteem</th>
+                            <td>Android 7.1</td>
+                        </tr>
+                        <tr>
+                            <th>Draadloze verbinding</th>
+                            <td>Bluethooth Wifi</td>
+                        </tr>
+                        <tr>
+                            <th>Opslagcapaciteit</th>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr>
+                            <th>RAM-geheugen</th>
+                            <td> 1 GB</td>
+                        </tr>
+                        <tr>
+                            <th>Prijs</th>
+                            <td>€69-</td>
+                        </tr>
+                    </table>
+                    <div align="justify"><br>
+                        De Lenovo Tab 7 Essential 8 GB is een compacte tablet die je overal mee naar toe kunt nemen dankzij het 7 inch scherm en het gewicht van slechts 248 gram. De tablet beschikt over een quad core-processor waardoor er voldoende snelheid is om snel door apps te navigeren. De Lenovo Tab 7 Essential heeft een intern geheugen van 8 GB waar je jouw documenten, foto’s of muziek op kunt slaan. Mocht het interne geheugen onvoldoende zijn is deze uit te breiden met een Micro SD-kaartje tot maximaal 128 GB.
+
+                        <button class="button"><a href="https://www.mediamarkt.nl/nl/product/_lenovo-tab-7-essential-8-gb-tb-7304f-1550382.html" target="blank">Koop hier</a></button>
+                    </div>
+                </div>               
+            </content>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer class="copyright">
+            <a href="file:///D:/ROC/Leerjaar%201/Project/website/workspace/copyright.html">©Mink Veldkamp 2018</a>
+        </footer>
+        
+        <script type="text/javascript" >
+            function orderProduct(){
+                var productAantal = sessionStorage.getItem('productAantal');
+                if(productAantal== null){
+                    productAantal = 0;
+                }
+                
+                productAantal = parseInt(productAantal) + 1;
+                sessionStorage.setItem('productAantal',  productAantal);
+                console.log(productAantal);
+                document.getElementById('winkelmand').innerHTML = productAantal;
+               
+                
+            }
+            
+            function clearBasket(){
+                sessionStorage.removeItem('productAantal');
+                document.getElementById('winkelmand').innerHTML = 0;
+            }
+        </script>
+    </body>
+</html>

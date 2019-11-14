@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lenovo Tablet</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+             <nav class="navigatie">
+                <ul class="nav nav-list">
+                    <li id="logo"><a href="home.html"><img src="home.jpg" alt="" id="logo"></a></li>
+                    <li id="home"><a href="#">Home</a></li>
+                    <li ><a href="#">Producten</a></li>
+                    <li ><a href="#">Over ons</a></li>
+                    <li ><a href="#">Contact</a></li>
+                    <li class="winkelmand" >In Winkelmand: <span id="winkelmand"></span><div><a href="#" class="empty-basket" onclick="clearBasket()">Leeg mand</div></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <div class="broodkruimel"><a href="index.html">Home</a> / Lenovo</div>
+        <main>
+            <content>
+                <h2>Samsung Tablet</h2>
+            </content>
+            <content >
+                <div class="product-detail">
+                    <img src="img/SAMSUNG-Galaxy-Tab-A-10.1WiFi-Zwart.png" alt="Een tablet van het merk Samsung">
+                    <div class="bestel-tablet">
+                        <span class="Prijs"> 399,-</span> 
+                        <button class="zet-in-winkelmand" onclick="orderProduct()">In winkelmand</button>
+                    </div>
+                </div>
+                
+                <div class="product-description-detail">
+                    <table class="product-table">
+                        <tr>
+                            <th>Schermdiagonaal</th>
+                            <td>10.1 inch</td>
+                        </tr>
+                        <tr>
+                            <th>Besturingssysteem</th>
+                            <td>Android</td>
+                        </tr>
+                        <tr>
+                            <th>Draadloze verbinding</th>
+                            <td>Bluethooth Wifi</td>
+                        </tr>
+                        <tr>
+                            <th>Opslagcapaciteit</th>
+                            <td>16GB</td>
+                        </tr>
+                        <tr>
+                            <th>RAM-geheugen</th>
+                            <td> 2 GB</td>
+                        </tr>
+                   
+                    </table>
+                    <div class="product-description">
+                      Deze Apple iPad heeft een snellere processor dan zijn voorganger, waardoor je sneller door apps en menu's heen navigeert. 
+                      Het 4:3 Retina beeldscherm leent zich goed voor lezen en browsen. Zo wissel je tijdens je ontbijt snel tussen het nieuws en 
+                      je social media kanalen. Start een videogesprek en praat even bij met vrienden en familie. 
+                      Dankzij de FaceTime HD camera aan de voorkant ben je goed zichtbaar voor de persoon aan de andere kant. 
+                      's Avonds plof je met je Apple iPad op de bank en stream je een serie of luister je nog wat muziek voor het slapen gaan.
+                    </div>
+                </div>
+                
+            </content>
+        </main>
+        <footer>
+            
+        </footer>
+        
+        <script type="text/javascript" >
+            function orderProduct(){
+                var productAantal = sessionStorage.getItem('productAantal');
+                if(productAantal== null){
+                    productAantal = 0;
+                }
+                
+                productAantal = parseInt(productAantal) + 1;
+                sessionStorage.setItem('productAantal',  productAantal);
+                console.log(productAantal);
+                document.getElementById('winkelmand').innerHTML = productAantal;
+               
+                
+            }
+            
+            function clearBasket(){
+                sessionStorage.removeItem('productAantal');
+                document.getElementById('winkelmand').innerHTML = 0;
+            }
+        </script>
+    </body>
+</html>
